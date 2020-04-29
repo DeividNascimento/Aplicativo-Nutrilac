@@ -6,18 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".CriarLoteActivity">
 
+    <ImageView
+        android:id="@+id/criar_lote_imagem"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/imagem_das_vacas"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imagem_vacas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/criar_lote_orientacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:gravity="center"
-        android:text="Utilize o formulário abaixo para criar o lote"
-        android:textSize="20sp"
+        android:text="@string/criar_lote_orientacao"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/criar_lote_imagem" />
 
     <EditText
         android:id="@+id/criar_lote_nome"
@@ -28,51 +50,55 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:hint="Nome do lote (Ex: Filhas da Mimosa)"
+        android:hint="@string/criar_lote_nome"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_orientacao" />
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_orientacao"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/criar_lote_quantidade"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Número de animais"
+        android:hint="@string/criar_lote_numero"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="@id/criar_lote_nome"
         app:layout_constraintStart_toStartOf="@id/criar_lote_nome"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_nome" />
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_nome"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/criar_lote_producao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Produção média/dia"
+        android:hint="@string/criar_lote_producao_media"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@id/criar_lote_quantidade"
         app:layout_constraintStart_toStartOf="@id/criar_lote_quantidade"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_quantidade" />
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_quantidade"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/criar_lote_fase_lactacao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Fase de lactação"
+        android:hint="@string/criar_lote_fase_lactacao"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@id/criar_lote_producao"
         app:layout_constraintStart_toStartOf="@id/criar_lote_producao"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_producao" />
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_producao"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/criar_lote_botao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Criar lote"
+        android:text="@string/criar_lote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/criar_lote_fase_lactacao" />

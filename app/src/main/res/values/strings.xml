@@ -1,12 +1,20 @@
 <resources>
     <string name="app_name">Nutrilac</string>
-    <string name="mensagem_boas_vindas">Bem vindo(a) ao aplicativo Nutrilac!</string>
+    <string name="mensagem_boas_vindas">Bem vindo(a) ao Nutrilac!</string>
     <string name="senha">Senha</string>
     <string name="entrar">Entrar</string>
-    <string name="mensagem_criar_conta">Não tem uma conta? Registre-se</string>
+    <string name="mensagem_criar_conta">Não possui uma conta?</string>
     <string name="cpf">CPF (somente números)</string>
     <string name="confirmar_senha">Confirmar senha</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="cancelar">Cancelar</string>
     <string name="nome">Nome</string>
+    <string name="criar_lote_orientacao">Preencha as informações abaixo para criar o lote</string>
+    <string name="criar_lote_nome">Nome do lote (Ex: Filhas da Mimosa)</string>
+    <string name="criar_lote_numero">Número de animais</string>
+    <string name="criar_lote_producao_media">Produção média/dia</string>
+    <string name="criar_lote_fase_lactacao">Fase de lactação</string>
+    <string name="criar_lote">Criar lote</string>
+    <string name="imagem_das_vacas">Imagem das vacas</string>
+    <string name="orientacao_login">Digite os seus dados abaixo para acessar a sua conta</string>
 </resources>

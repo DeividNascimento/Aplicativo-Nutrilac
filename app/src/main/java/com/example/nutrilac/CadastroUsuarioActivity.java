@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class CadastroUsuarioActivity extends AppCompatActivity {
 
-    public static final String CADASTRO_DE_USUÁRIO = "Cadastro de usuário";
+    public static final String CADASTRO_DE_USUÁRIO = "Cadastrar usuário";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
