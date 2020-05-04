@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/criar_lote_imagem"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -75,23 +75,46 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/criar_lote_producao_media"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="@id/criar_lote_quantidade"
         app:layout_constraintStart_toStartOf="@id/criar_lote_quantidade"
         app:layout_constraintTop_toBottomOf="@+id/criar_lote_quantidade"
         android:importantForAutofill="no" />
 
-    <EditText
-        android:id="@+id/criar_lote_fase_lactacao"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/criar_lote_lactacao"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="@string/criar_lote_fase_lactacao"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@id/criar_lote_producao"
-        app:layout_constraintStart_toStartOf="@id/criar_lote_producao"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_producao"
-        android:importantForAutofill="no" />
+        android:text="@string/fase_lactacao"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/criar_lote_producao"
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_producao" />
+
+    <CheckBox
+        android:id="@+id/criar_lote_opcao_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/opcao_a"
+        app:layout_constraintStart_toStartOf="@+id/criar_lote_lactacao"
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_lactacao" />
+
+    <CheckBox
+        android:id="@+id/criar_lote_opcao_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opcao_b"
+        app:layout_constraintStart_toStartOf="@+id/criar_lote_opcao_a"
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_opcao_a" />
+
+    <CheckBox
+        android:id="@+id/criar_lote_opcao_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opcao_c"
+        app:layout_constraintStart_toStartOf="@+id/criar_lote_opcao_b"
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_opcao_b" />
 
     <Button
         android:id="@+id/criar_lote_botao"
@@ -101,5 +124,6 @@
         android:text="@string/criar_lote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_fase_lactacao" />
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_opcao_c" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

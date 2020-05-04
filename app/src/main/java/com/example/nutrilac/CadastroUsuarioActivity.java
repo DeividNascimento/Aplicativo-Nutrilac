@@ -24,5 +24,14 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView textCriarConta = findViewById(R.id.cadastro_botao_confirmar);
+        textCriarConta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CadastroUsuarioActivity.this,EscolheAlimentosActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -4,7 +4,7 @@
     <string name="senha">Senha</string>
     <string name="entrar">Entrar</string>
     <string name="mensagem_criar_conta">Não possui uma conta?</string>
-    <string name="cpf">CPF (somente números)</string>
+    <string name="email">E-Mail</string>
     <string name="confirmar_senha">Confirmar senha</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="cancelar">Cancelar</string>
@@ -12,9 +12,22 @@
     <string name="criar_lote_orientacao">Preencha as informações abaixo para criar o lote</string>
     <string name="criar_lote_nome">Nome do lote (Ex: Filhas da Mimosa)</string>
     <string name="criar_lote_numero">Número de animais</string>
-    <string name="criar_lote_producao_media">Produção média/dia</string>
-    <string name="criar_lote_fase_lactacao">Fase de lactação</string>
+    <string name="criar_lote_producao_media">Produção média em litros/dia</string>
     <string name="criar_lote">Criar lote</string>
     <string name="imagem_das_vacas">Imagem das vacas</string>
-    <string name="orientacao_login">Digite os seus dados abaixo para acessar a sua conta</string>
+    <string name="orientacao_login">Digite os seus dados para acessar a sua conta</string>
+    <string name="escolha_alimentos">Escolha os alimentos</string>
+    <string name="volumoso">Volumoso</string>
+    <string name="exemplos_volumoso">Exemplos: silagem, feno, capim verde picado</string>
+    <string name="suplementos">Suplementos</string>
+    <string name="concentrado">Concentrado</string>
+    <string name="exemplos_concentrado">Exemplos: energéticos e protéicos</string>
+    <string name="exemplos_suplemento">Exemplos: sal mineral, sal proteinado, ureia</string>
+    <string name="finalizar_escolha">Finalizar escolha</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="cadastro_orientacao">Digite as informações solicitadas abaixo para criar a sua conta</string>
+    <string name="fase_lactacao">Fase de lactação:</string>
+    <string name="opcao_a">Opção A</string>
+    <string name="opcao_c">Opção C</string>
+    <string name="opcao_b">Opção B</string>
 </resources>
