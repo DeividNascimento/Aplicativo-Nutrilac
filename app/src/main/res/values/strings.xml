@@ -19,7 +19,7 @@
     <string name="escolha_alimentos">Escolha os alimentos</string>
     <string name="volumoso">Volumoso</string>
     <string name="exemplos_volumoso">Exemplos: silagem, feno, capim verde picado</string>
-    <string name="suplementos">Suplementos</string>
+    <string name="suplementos">Suplemento</string>
     <string name="concentrado">Concentrado</string>
     <string name="exemplos_concentrado">Exemplos: energéticos e protéicos</string>
     <string name="exemplos_suplemento">Exemplos: sal mineral, sal proteinado, ureia</string>
@@ -30,4 +30,12 @@
     <string name="opcao_a">Opção A</string>
     <string name="opcao_c">Opção C</string>
     <string name="opcao_b">Opção B</string>
+    <string name="relatorio">Relatório</string>
+    <string name="lotes">Lotes</string>
+    <string name="comprar_melhoria">Comprar melhoria</string>
+    <string name="obter_pacote">Obter pacote</string>
+    <string name="sair_da_minha_conta">Sair da minha conta</string>
+    <string name="meu_perfil">Meu perfil</string>
+    <string name="duvidas_frequentes">Dúvidas frequentes</string>
+    <string name="cabecalho_listagem_lotes">Cabeçalho de fundo verde para a tela de listagem dos lotes</string>
 </resources>

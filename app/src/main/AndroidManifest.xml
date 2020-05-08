@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EscolheAlimentosActivity"></activity>
+        <activity android:name=".ListaLotesActivity"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".EscolheAlimentosActivity" />
         <activity android:name=".CriarLoteActivity" />
         <activity android:name=".TelaPrimeiroAcessoActivity">
             <intent-filter>
