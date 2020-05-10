@@ -1,4 +1,4 @@
-package com.example.nutrilac;
+package com.example.nutrilac.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.nutrilac.R;
 
 public class CadastroUsuarioActivity extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
         textCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CadastroUsuarioActivity.this,TelaPrimeiroAcessoActivity.class);
+                Intent intent = new Intent(CadastroUsuarioActivity.this, TelaPrimeiroAcessoActivity.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +31,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
         textCriarConta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CadastroUsuarioActivity.this,EscolheAlimentosActivity.class);
+                Intent intent = new Intent(CadastroUsuarioActivity.this, EscolheAlimentosActivity.class);
                 startActivity(intent);
             }
         });
