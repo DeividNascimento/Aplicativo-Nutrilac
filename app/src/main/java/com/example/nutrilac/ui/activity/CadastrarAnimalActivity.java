@@ -6,14 +6,14 @@ import android.os.Bundle;
 
 import com.example.nutrilac.R;
 
-public class CriarLoteActivity extends AppCompatActivity {
+public class CadastrarAnimalActivity extends AppCompatActivity {
 
-    public static final String TITLE_APPBAR = "Criar lote";
+    public static final String TITLE_APPBAR = "Cadastrar animal";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_criar_lote);
+        setContentView(R.layout.activity_cadastrar_animal);
         setTitle(TITLE_APPBAR);
     }
 }

@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/home_botao_animais"
+        android:id="@+id/alimentos_botao_volumoso"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -30,7 +30,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/drawable_botao_menu"
-        android:text="Volumoso"
+        android:text="@string/volumoso"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/home_botao_lotes"
+        android:id="@+id/alimentos_botao_concentrado"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -48,16 +48,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/drawable_botao_menu"
-        android:text="Concentrado"
+        android:text="@string/concentrado"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_botao_animais"
+        app:layout_constraintTop_toBottomOf="@id/alimentos_botao_volumoso"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/home_botao_dieta"
+        android:id="@+id/alimentos_botao_suplemento"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -66,12 +66,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/drawable_botao_menu"
-        android:text="Suplemento"
+        android:text="@string/suplemento"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_botao_lotes"
+        app:layout_constraintTop_toBottomOf="@id/alimentos_botao_concentrado"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_view_item_lote"
+        android:id="@+id/card_view_item_animal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -34,14 +32,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/item_lote_nome"
+                android:id="@+id/item_animal_nome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Lote:"
+                android:text="Nome:"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -52,48 +47,72 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/item_lote_nome_resposta"
+                android:id="@+id/item_animal_registro_nome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@id/item_lote_nome"
-                app:layout_constraintTop_toTopOf="@id/item_lote_nome"
-                tools:text="Filhos da Mimosa" />
+                app:layout_constraintStart_toEndOf="@+id/item_animal_nome"
+                app:layout_constraintTop_toTopOf="@+id/item_animal_nome"
+                tools:text="Estrela" />
 
             <TextView
-                android:id="@+id/item_lote_quantidade"
+                android:id="@+id/item_animal_registro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Número de animais:"
+                android:text="Número de registro:"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@id/item_lote_nome"
-                app:layout_constraintTop_toBottomOf="@id/item_lote_nome" />
+                app:layout_constraintStart_toStartOf="@+id/item_animal_nome"
+                app:layout_constraintTop_toBottomOf="@+id/item_animal_nome" />
 
             <TextView
-                android:id="@+id/item_lote_quantidade_resposta"
+                android:id="@+id/item_animal_registro_resposta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@id/item_lote_quantidade"
-                app:layout_constraintTop_toTopOf="@id/item_lote_quantidade"
-                tools:text="20" />
+                app:layout_constraintStart_toEndOf="@id/item_animal_registro"
+                app:layout_constraintTop_toTopOf="@id/item_animal_registro"
+                tools:text="26" />
 
             <TextView
-                android:id="@+id/item_lote_lactacao"
+                android:id="@+id/item_animal_peso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Fase de lactação:"
+                android:text="Peso:"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@id/item_lote_quantidade"
-                app:layout_constraintTop_toBottomOf="@id/item_lote_quantidade" />
+                app:layout_constraintStart_toStartOf="@id/item_animal_registro"
+                app:layout_constraintTop_toBottomOf="@id/item_animal_registro" />
+
+            <TextView
+                android:id="@+id/item_animal_peso_resposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/item_animal_peso"
+                app:layout_constraintTop_toTopOf="@id/item_animal_peso"
+                tools:text="720 kg" />
+
+            <TextView
+                android:id="@+id/item_animal_identifica_lote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Lote:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/item_animal_peso"
+                app:layout_constraintTop_toBottomOf="@id/item_animal_peso" />
 
             <TextView
                 android:id="@+id/item_lote_lactacao_resposta"
@@ -102,34 +121,11 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@id/item_lote_lactacao"
-                app:layout_constraintTop_toTopOf="@id/item_lote_lactacao"
-                tools:text="70-120 dias" />
-
-            <TextView
-                android:id="@+id/item_lote_producao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Produção média:"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@id/item_lote_lactacao"
-                app:layout_constraintTop_toBottomOf="@id/item_lote_lactacao" />
-
-            <TextView
-                android:id="@+id/item_lote_producao_resposta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@id/item_lote_producao"
-                app:layout_constraintTop_toTopOf="@id/item_lote_producao"
-                tools:text="15 L" />
+                app:layout_constraintStart_toEndOf="@id/item_animal_identifica_lote"
+                app:layout_constraintTop_toTopOf="@id/item_animal_identifica_lote"
+                tools:text="Filhas da Mimosa" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

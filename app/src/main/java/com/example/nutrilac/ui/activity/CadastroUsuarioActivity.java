@@ -31,7 +31,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
         textCriarConta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CadastroUsuarioActivity.this, EscolheAlimentosActivity.class);
+                Intent intent = new Intent(CadastroUsuarioActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

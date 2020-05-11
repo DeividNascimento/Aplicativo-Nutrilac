@@ -9,21 +9,21 @@ import android.widget.TextView;
 
 import com.example.nutrilac.R;
 
-public class ListagemVolumososActivity extends AppCompatActivity {
+public class ListaAnimaisActivity extends AppCompatActivity {
 
-    public static final String TTILE_APPBAR = "Volumosos";
+    public static final String TITLE_APPBAR = "Lista de animais";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listagem_volumosos);
-        setTitle(TTILE_APPBAR);
+        setContentView(R.layout.activity_lista_animais);
+        setTitle(TITLE_APPBAR);
 
-        TextView botaoConfirmar = findViewById(R.id.lista_volumoso_botao_confirmar);
-        botaoConfirmar.setOnClickListener(new View.OnClickListener() {
+        TextView botaoCadastrarAnimal = findViewById(R.id.lista_lotes_button_cadastrar_animal);
+        botaoCadastrarAnimal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ListagemVolumososActivity.this,HomeActivity.class);
+                Intent intent = new Intent(ListaAnimaisActivity.this,CadastrarAnimalActivity.class);
                 startActivity(intent);
             }
         });

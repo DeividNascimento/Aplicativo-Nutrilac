@@ -16,6 +16,15 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        TextView botaoVerAnimais = findViewById(R.id.home_botao_animais);
+        botaoVerAnimais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,ListaAnimaisActivity.class);
+                startActivity(intent);
+            }
+        });
+
         TextView botaoVerLotes = findViewById(R.id.home_botao_lotes);
         botaoVerLotes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,5 +33,15 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView botaoVerDieta = findViewById(R.id.home_botao_dieta_animal);
+        botaoVerDieta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,EscolheAlimentosActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
