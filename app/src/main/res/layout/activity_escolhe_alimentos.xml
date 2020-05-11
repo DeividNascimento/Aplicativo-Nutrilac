@@ -20,81 +20,58 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <CheckBox
-        android:id="@+id/alimentos_caixa_volumoso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/home_botao_animais"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/volumoso"
-        android:textSize="24sp"
+        android:background="@drawable/drawable_botao_menu"
+        android:text="Volumoso"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alimentos_texto_orientacao"
+        app:layout_constraintTop_toBottomOf="@id/alimentos_texto_orientacao"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/alimentos_exemplos_volumoso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/exemplos_volumoso"
-        app:layout_constraintStart_toStartOf="@+id/alimentos_caixa_volumoso"
-        app:layout_constraintTop_toBottomOf="@+id/alimentos_caixa_volumoso" />
-
-    <CheckBox
-        android:id="@+id/alimentos_caixa_concentrado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/concentrado"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/alimentos_exemplos_volumoso"
-        app:layout_constraintTop_toBottomOf="@id/alimentos_exemplos_volumoso" />
-
-    <TextView
-        android:id="@+id/alimentos_exemplos_concentrado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/exemplos_concentrado"
-        app:layout_constraintStart_toStartOf="@+id/alimentos_caixa_concentrado"
-        app:layout_constraintTop_toBottomOf="@+id/alimentos_caixa_concentrado" />
-
-    <CheckBox
-        android:id="@+id/alimentos_caixa_sumplemento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/suplementos"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/alimentos_exemplos_concentrado"
-        app:layout_constraintTop_toBottomOf="@+id/alimentos_exemplos_concentrado" />
-
-    <TextView
-        android:id="@+id/alimentos_caixa_suplemento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/exemplos_suplemento"
-        app:layout_constraintStart_toStartOf="@+id/alimentos_caixa_sumplemento"
-        app:layout_constraintTop_toBottomOf="@+id/alimentos_caixa_sumplemento" />
-
     <Button
-        android:id="@+id/alimentos_botao_confirmar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/finalizar_escolha"
+        android:id="@+id/home_botao_lotes"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/drawable_botao_menu"
+        android:text="Concentrado"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alimentos_caixa_suplemento"
+        app:layout_constraintTop_toBottomOf="@id/home_botao_animais"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/home_botao_dieta"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/drawable_botao_menu"
+        android:text="Suplemento"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_botao_lotes"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

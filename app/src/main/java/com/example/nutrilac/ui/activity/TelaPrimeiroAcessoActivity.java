@@ -20,7 +20,7 @@ public class TelaPrimeiroAcessoActivity extends AppCompatActivity {
         entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TelaPrimeiroAcessoActivity.this,HomeActivity.class);
+                Intent intent = new Intent(TelaPrimeiroAcessoActivity.this,ListagemVolumososActivity.class);
                 startActivity(intent);
             }
         });

@@ -38,4 +38,9 @@
     <string name="meu_perfil">Meu perfil</string>
     <string name="duvidas_frequentes">Dúvidas frequentes</string>
     <string name="cabecalho_listagem_lotes">Cabeçalho de fundo verde para a tela de listagem dos lotes</string>
+    <string name="animais">Animais</string>
+    <string name="dieta_animal">Dieta animal</string>
+    <string name="opcao_c">Opção C</string>
+    <string name="opcao_a">Opção A</string>
+    <string name="opcao_b">Opção B</string>
 </resources>

@@ -91,30 +91,31 @@
         app:layout_constraintStart_toStartOf="@+id/criar_lote_producao"
         app:layout_constraintTop_toBottomOf="@+id/criar_lote_producao" />
 
-    <CheckBox
-        android:id="@+id/criar_lote_opcao_a"
+    <RadioGroup
+        android:id="@+id/criar_lote_radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/opcao_a"
         app:layout_constraintStart_toStartOf="@+id/criar_lote_lactacao"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_lactacao" />
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_lactacao">
 
-    <CheckBox
-        android:id="@+id/criar_lote_opcao_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/opcao_b"
-        app:layout_constraintStart_toStartOf="@+id/criar_lote_opcao_a"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_opcao_a" />
+        <RadioButton
+            android:id="@+id/criar_lote_radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao_a" />
 
-    <CheckBox
-        android:id="@+id/criar_lote_opcao_c"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/opcao_c"
-        app:layout_constraintStart_toStartOf="@+id/criar_lote_opcao_b"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_opcao_b" />
+        <RadioButton
+            android:id="@+id/criar_lote_radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao_b" />
+
+        <RadioButton
+            android:id="@+id/criar_lote_radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao_c" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/criar_lote_botao"
@@ -124,6 +125,6 @@
         android:text="@string/criar_lote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/criar_lote_opcao_c" />
+        app:layout_constraintTop_toBottomOf="@+id/criar_lote_radio_group" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
