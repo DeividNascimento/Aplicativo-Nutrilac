@@ -34,8 +34,8 @@ public class ListaLotesActivity extends AppCompatActivity {
             }
         });
 
-        ListView listaDePacotes = findViewById(R.id.lista_lotes_listview);
+        ListView listaDePacotesLotes = findViewById(R.id.lista_lotes_listview);
         final List<PacoteLotes> pacotes = new PacoteLotesDAO().lista();
-        listaDePacotes.setAdapter(new ListaPacotesLotesAdapter(pacotes,this));
+        listaDePacotesLotes.setAdapter(new ListaPacotesLotesAdapter(pacotes,this));
     }
 }

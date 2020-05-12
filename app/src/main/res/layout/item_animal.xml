@@ -47,7 +47,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/item_animal_registro_nome"
+                android:id="@+id/item_animal_nome_resposta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
@@ -102,7 +102,7 @@
                 tools:text="720 kg" />
 
             <TextView
-                android:id="@+id/item_animal_identifica_lote"
+                android:id="@+id/item_animal_lote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -115,14 +115,14 @@
                 app:layout_constraintTop_toBottomOf="@id/item_animal_peso" />
 
             <TextView
-                android:id="@+id/item_lote_lactacao_resposta"
+                android:id="@+id/item_animal_lote_resposta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@id/item_animal_identifica_lote"
-                app:layout_constraintTop_toTopOf="@id/item_animal_identifica_lote"
+                app:layout_constraintStart_toEndOf="@id/item_animal_lote"
+                app:layout_constraintTop_toTopOf="@id/item_animal_lote"
                 tools:text="Filhas da Mimosa" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
