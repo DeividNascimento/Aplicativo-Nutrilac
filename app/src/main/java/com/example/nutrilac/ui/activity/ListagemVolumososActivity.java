@@ -19,13 +19,5 @@ public class ListagemVolumososActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listagem_volumosos);
         setTitle(TTILE_APPBAR);
 
-        TextView botaoConfirmar = findViewById(R.id.lista_volumoso_botao_confirmar);
-        botaoConfirmar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ListagemVolumososActivity.this,HomeActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

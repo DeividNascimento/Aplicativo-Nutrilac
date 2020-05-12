@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.ListaAnimaisActivity"></activity>
+        <activity android:name=".ui.activity.ListagemSuplementoActivity"></activity>
+        <activity android:name=".ui.activity.ListagemConcentradosActivity" />
+        <activity android:name=".ui.activity.ListaAnimaisActivity" />
         <activity android:name=".ui.activity.CadastrarAnimalActivity" />
         <activity android:name=".ui.activity.ListagemVolumososActivity" />
         <activity android:name=".ui.activity.ListaLotesActivity" />

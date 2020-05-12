@@ -27,5 +27,23 @@ public class EscolheAlimentosActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView botaoConcentrado = findViewById(R.id.alimentos_botao_concentrado);
+        botaoConcentrado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EscolheAlimentosActivity.this,ListagemConcentradosActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView botaoSuplemento = findViewById(R.id.alimentos_botao_suplemento);
+        botaoSuplemento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EscolheAlimentosActivity.this,ListagemSuplementoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
