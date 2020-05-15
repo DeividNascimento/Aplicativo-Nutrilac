@@ -16,16 +16,21 @@ public class TelaPrimeiroAcessoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_primeiro_acesso);
 
-        TextView entrar = findViewById(R.id.login_botao_entrar);
+        configuraBotoes();
+
+    }
+
+    private void configuraBotoes() {
+        TextView entrar = findViewById(R.id.primeiro_acesso_botao_entrar);
         entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TelaPrimeiroAcessoActivity.this,HomeActivity.class);
+                Intent intent = new Intent(TelaPrimeiroAcessoActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
 
-        TextView criarConta = findViewById(R.id.login_botao_criar_conta);
+        TextView criarConta = findViewById(R.id.primeiro_acesso_botao_criar_conta);
         criarConta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,5 +39,13 @@ public class TelaPrimeiroAcessoActivity extends AppCompatActivity {
             }
         });
 
+        TextView entrarVisitante = findViewById(R.id.primeiro_acesso_botao_entrar_visitante);
+        entrarVisitante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TelaPrimeiroAcessoActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

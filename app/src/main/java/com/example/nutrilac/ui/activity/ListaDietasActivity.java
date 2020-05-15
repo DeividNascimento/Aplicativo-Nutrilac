@@ -15,9 +15,9 @@ import android.widget.Toast;
 import com.example.nutrilac.R;
 import com.google.android.material.navigation.NavigationView;
 
-public class EscolheAlimentosActivity extends AppCompatActivity {
+public class ListaDietasActivity extends AppCompatActivity {
 
-    public static final String TITULO_APPBAR = "Alimentos";
+    public static final String TITTLE_APPBAR = "Lista de dietas";
     private DrawerLayout mdrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private NavigationView navigatView;
@@ -25,11 +25,24 @@ public class EscolheAlimentosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_escolhe_alimentos);
-        setTitle(TITULO_APPBAR);
+        setContentView(R.layout.activity_lista_dietas);
+        setTitle(TITTLE_APPBAR);
 
         configuraMenu();
+
         configuraBotoes();
+
+    }
+
+    private void configuraBotoes() {
+        TextView botaoCriarDieta = findViewById(R.id.lista_dietas_button_criar_dieta);
+        botaoCriarDieta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListaDietasActivity.this, EscolheAlimentosActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void configuraMenu() {
@@ -38,25 +51,23 @@ public class EscolheAlimentosActivity extends AppCompatActivity {
         mdrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
         navigatView = (NavigationView) findViewById(R.id.navView);
         navigatView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.menu_inicio:
-                        Intent intentInicio = new Intent(EscolheAlimentosActivity.this, HomeActivity.class);
+                        Intent intentInicio = new Intent(ListaDietasActivity.this, HomeActivity.class);
                         startActivity(intentInicio);
                         break;
                     case R.id.menu_relatorio:
                     case R.id.menu_minhaconta:
                     case R.id.menu_contato:
                     case R.id.menu_ajuda:
-                        Toast.makeText(EscolheAlimentosActivity.this,"Essa tela ainda será desenvolvida",Toast.LENGTH_LONG).show();
+                        Toast.makeText(ListaDietasActivity.this,"Essa tela ainda será desenvolvida",Toast.LENGTH_LONG).show();
                         break;
                     case R.id.menu_sairDaConta:
-                        Intent intent = new Intent(EscolheAlimentosActivity.this, TelaPrimeiroAcessoActivity.class);
+                        Intent intent = new Intent(ListaDietasActivity.this, TelaPrimeiroAcessoActivity.class);
                         startActivity(intent);
                         break;
                 }
@@ -71,34 +82,5 @@ public class EscolheAlimentosActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void configuraBotoes() {
-        TextView botaoVolumoso = findViewById(R.id.alimentos_botao_volumoso);
-        botaoVolumoso.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EscolheAlimentosActivity.this, ListagemVolumososActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView botaoConcentrado = findViewById(R.id.alimentos_botao_concentrado);
-        botaoConcentrado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EscolheAlimentosActivity.this, ListagemConcentradosActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        TextView botaoSuplemento = findViewById(R.id.alimentos_botao_suplemento);
-        botaoSuplemento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EscolheAlimentosActivity.this, ListagemSuplementoActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

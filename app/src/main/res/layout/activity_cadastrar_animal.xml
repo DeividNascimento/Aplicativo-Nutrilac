@@ -16,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center"
+        android:textSize="18sp"
         android:text="Preencha as informações abaixo para cadastrar o animal"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

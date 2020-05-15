@@ -39,6 +39,9 @@
     <string name="duvidas_frequentes">Dúvidas frequentes</string>
     <string name="cabecalho_listagem_lotes">Cabeçalho de fundo verde para a tela de listagem dos lotes</string>
     <string name="animais">Animais</string>
-    <string name="dieta_animal">Dieta animal</string>
+    <string name="dieta">Dietas</string>
     <string name="suplemento">Suplemento</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

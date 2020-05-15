@@ -9,21 +9,21 @@ import android.widget.TextView;
 
 import com.example.nutrilac.R;
 
-public class CadastroUsuarioActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
-    public static final String CADASTRO_DE_USUÁRIO = "Cadastrar usuário";
+    public static final String TITLE_APPBAR = "Login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_usuario);
-        setTitle(CADASTRO_DE_USUÁRIO);
+        setContentView(R.layout.activity_login);
+        setTitle(TITLE_APPBAR);
 
-        TextView textCriarConta = findViewById(R.id.cadastro_botao_confirmar);
-        textCriarConta.setOnClickListener(new View.OnClickListener() {
+        TextView entrar = findViewById(R.id.login_botao_entrar);
+        entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CadastroUsuarioActivity.this, HomeActivity.class);
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

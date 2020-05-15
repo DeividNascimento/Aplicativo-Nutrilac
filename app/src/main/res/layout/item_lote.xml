@@ -25,7 +25,7 @@
             android:layout_height="match_parent">
 
             <View
-                android:id="@+id/item_pacote_faixa"
+                android:id="@+id/item_lote_faixa"
                 android:layout_width="0dp"
                 android:layout_height="3dp"
                 android:background="@color/colorPrimary"
