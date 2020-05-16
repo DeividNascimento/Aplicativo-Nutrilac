@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.activity.ListaDietasActivity" />
-        <activity android:name=".ui.activity.LoginActivity" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:parentActivityName=".ui.activity.TelaPrimeiroAcessoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.TelaPrimeiroAcessoActivity" />
+        </activity>
         <activity android:name=".ui.activity.ListagemSuplementoActivity" />
         <activity android:name=".ui.activity.ListagemConcentradosActivity" />
         <activity android:name=".ui.activity.ListaAnimaisActivity" />
@@ -27,7 +33,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.CadastroUsuarioActivity" />
+        <activity
+            android:name=".ui.activity.CadastroUsuarioActivity"
+            android:parentActivityName=".ui.activity.TelaPrimeiroAcessoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.TelaPrimeiroAcessoActivity" />
+        </activity>
     </application>
 
 </manifest>
